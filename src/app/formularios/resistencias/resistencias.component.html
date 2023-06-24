@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-2">
+        <div class="row control-group">
+            <label>Banda 1</label>
+            <select name="color1" [(ngModel)]="banda1">
+                <option style="background-color: black; color: white;" value="negro">Negro</option>
+                <option style="background-color: brown; color: white;" value="cafe">Cafe</option>
+                <option style="background-color: red; color: white;" value="rojo">Rojo</option>
+                <option style="background-color: orange; color: white;" value="naranja">Naranja</option>
+                <option style="background-color: yellow;" value="amarillo">Amarillo</option>
+                <option style="background-color: green; color: white;" value=verde>Verde</option>
+                <option style="background-color: blue; color: white;" value=azul>Azul</option>
+                <option style="background-color: purple; color: white;" value=violeta>Violeta</option>
+                <option style="background-color: gray;" value="gris">Gris</option>
+                <option style="background-color: white;" value="blanco">Blanco</option>
+            </select>
+            <label>Banda 2</label>
+            <select name="color2" [(ngModel)]="banda2">
+                <option style="background-color: black; color: white;" value="negro">Negro</option>
+                <option style="background-color: brown; color: white;" value="cafe">Cafe</option>
+                <option style="background-color: red; color: white;" value="rojo">Rojo</option>
+                <option style="background-color: orange; color: white;" value="naranja">Naranja</option>
+                <option style="background-color: yellow;" value="amarillo">Amarillo</option>
+                <option style="background-color: green; color: white;" value=verde>Verde</option>
+                <option style="background-color: blue; color: white;" value=azul>Azul</option>
+                <option style="background-color: purple; color: white;" value=violeta>Violeta</option>
+                <option style="background-color: gray;" value="gris">Gris</option>
+                <option style="background-color: white;" value="blanco">Blanco</option>
+            </select>
+            <label>Banda 3</label>
+            <select name="color3" [(ngModel)]="banda3">
+                <option style="background-color: black; color: white;" value="negro">Negro</option>
+                <option style="background-color: brown; color: white;" value="cafe">Cafe</option>
+                <option style="background-color: red; color: white;" value="rojo">Rojo</option>
+                <option style="background-color: orange; color: white;" value="naranja">Naranja</option>
+                <option style="background-color: yellow;" value="amarillo">Amarillo</option>
+                <option style="background-color: green; color: white;" value=verde>Verde</option>
+                <option style="background-color: blue; color: white;" value=azul>Azul</option>
+                <option style="background-color: purple; color: white;" value=violeta>Violeta</option>
+                <option style="background-color: gray;" value="gris">Gris</option>
+                <option style="background-color: white;" value="blanco">Blanco</option>
+            </select>
+            <label>Tolerancia ultima banda</label>
+            <select name="color4" [(ngModel)]="banda4">
+                <option style="background-color: gold;" value="oro">Oro</option>
+                <option style="background-color: silver;" value="plata">Plata</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" (click)="resis()">Calcular</button>
+        </div>
+    </div>
+    <div class="col-4">
+
+    </div>
+
+    <div class="col-6" >
+        <h2>Resultado: {{resultado}} ohms</h2>
+        <h2>Toleracia maxima: {{resultadoma}} ohms</h2>
+        <h2>Toleracia minima: {{resultadomi}} ohms</h2>
+    </div>
+</div>
